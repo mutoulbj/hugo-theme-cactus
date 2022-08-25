@@ -1,9 +1,9 @@
-<div id="disquss_thread">
+<div id="utterances_thread">
   <script src="https://utteranc.es/client.js"
     repo="{{ .Site.Params.Comments.Utterances.Repo }}"
-    issue-term="pathname"
+    issue-term="{{ default "title" .Site.Params.Comments.Utterancs.issueTerm }}"
     label="{{ .Site.Params.Comments.Utterances.Label }}"
-    theme="{{ .Site.Params.Comments.Utterances.Theme }}"
+    theme="{{ default "github-light" .Site.Params.Comments.Utterances.Theme }}"
     crossorigin="anonymous"
     async>
   </script>
