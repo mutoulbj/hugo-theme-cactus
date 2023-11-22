@@ -48,13 +48,13 @@
   {{ end }}
   {{ end }}
   <!-- Microsoft Clarity -->
-  {{ if .Site.MicrosoftClarity }}
+  {{ if .Site.Params.MicrosoftClarity }}
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "{{ .Site.MicrosoftClarityCode }}");
+    })(window, document, "clarity", "script", "{{ .Site.Params.MicrosoftClarityCode }}");
   </script>
   {{end}}
   <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
